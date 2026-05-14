@@ -1,0 +1,153 @@
+/* Page header */
+.experience-header {
+  padding: var(--space-8) 0 var(--space-12);
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: var(--space-12);
+}
+
+.experience-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.experience-eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+}
+
+.experience-title {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 6vw, 56px);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  margin-bottom: var(--space-4);
+}
+
+.experience-lede {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--muted);
+  max-width: 56ch;
+}
+
+/* List */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-8);
+  padding-bottom: var(--space-8);
+  border-bottom: 0.5px solid var(--border);
+}
+
+.experience-card:last-child {
+  border-bottom: none;
+}
+
+/* Left meta column */
+.experience-card-meta {
+  padding-top: var(--space-2);
+}
+
+.experience-card-period {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  margin-bottom: var(--space-2);
+}
+
+.experience-card-location {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Main content */
+.experience-card-company {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: var(--space-2);
+}
+
+.experience-card-role {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: var(--space-4);
+}
+
+.experience-card-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-card-bullets li {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+  padding: var(--space-3) 0;
+  padding-left: var(--space-4);
+  border-bottom: 0.5px solid var(--border);
+  position: relative;
+}
+
+.experience-card-bullets li:last-child {
+  border-bottom: none;
+}
+
+.experience-card-bullets li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--red);
+}
+
+/* Mobile — stack the meta above the role */
+@media (max-width: 768px) {
+  .experience-header {
+    padding: var(--space-4) 0 var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+
+  .experience-list {
+    gap: var(--space-8);
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+    padding-bottom: var(--space-6);
+  }
+
+  .experience-card-meta {
+    padding-top: 0;
+    display: flex;
+    gap: var(--space-3);
+  }
+
+  .experience-card-role {
+    font-size: 22px;
+  }
+}
