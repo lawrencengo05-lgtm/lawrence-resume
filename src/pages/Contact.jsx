@@ -40,9 +40,7 @@ export default function Contact() {
         <div className="contact-eyebrow">Get in touch</div>
         <h1 className="contact-title">Contact</h1>
         <p className="contact-lede">
-          Looking to hire a network engineer with real cloud experience and
-          a translation background between technical and non-technical
-          stakeholders? Send a note — I read every message.
+          Looking to hire a cloud engineer who's built and shipped real systems in production? Send a note — I respond to every message.
         </p>
       </section>
 
@@ -119,11 +117,11 @@ export default function Contact() {
         <aside className="contact-sidebar">
           <div className="contact-section-eyebrow">Other ways to reach me</div>
 
-          <a href="mailto:Lnngo86@outlook.com" className="contact-channel">
+          <a href="mailto:Lawrence.ngo05@gmail.com" className="contact-channel">
             <Mail size={16} />
             <div className="contact-channel-text">
               <div className="contact-channel-label">Email</div>
-              <div className="contact-channel-value">Lnngo86@outlook.com</div>
+              <div className="contact-channel-value">Lawrence.ngo05@gmail.com</div>
             </div>
           </a>
 

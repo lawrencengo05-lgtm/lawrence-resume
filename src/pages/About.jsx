@@ -6,11 +6,11 @@ export default function About() {
       <section className="about-header">
         <div className="about-eyebrow">About me</div>
         <h1 className="about-title">
-          Clinical research by day, <em>cloud labs by night.</em>
+          Clinical research by day, <em>cables and cloud by night</em>
         </h1>
         <p className="about-lede">
           The short version: I'm a clinical research coordinator at Fred
-          Hutchinson Cancer Center who taught myself AWS and networking on
+          Hutchinson Cancer Center who taught myself cloud and networking on
           nights and weekends — and now I'm looking for the role that lets
           me do that work full-time.
         </p>
@@ -34,24 +34,23 @@ export default function About() {
             worked as a Data Research Coordinator — data validation, quality
             checks, compliance — and at Fred Hutchinson I moved into a
             Clinical Research Coordinator role where I'm the bridge between
-            physicians, data managers, and IT support. Most of my day-to-day
-            is troubleshooting electronic data capture systems, REDCap
-            databases, and clinical software. Half my work is technical
-            translation: explaining what a system needs to a clinician,
-            explaining what a clinician needs to a developer.
+            physicians, data managers, and IT support. On any given day I'm
+            Triaging an EDC outage, debugging a REDCap permissions issue, or
+            sitting with a clinician walking through why a workflow keeps failing. 
+            Half the job is technical, finding the actual root cause when something
+            breaks. The other half is coordination: keeping physicians, data managers,
+            and IT moving in the same direction long enough to fix it.
           </p>
 
           <p>
-            That translation work is what pulled me toward network
-            engineering. Every time I helped a team debug an EDC outage or a
-            REDCap permission issue, I found myself wanting to understand
-            the layer underneath — DNS, routing, identity, the actual
-            infrastructure. So I started building. AWS Cloud Practitioner
-            first, then Solutions Architect Associate, then CompTIA Network+.
-            On the side: a Raspberry Pi NAS, a Windows Server lab with 500+
-            simulated users in Active Directory, a site-to-site VPN tunnel
-            between my home lab and an AWS VPC, and a full multi-user
-            serverless app on AWS.
+            What pulled me toward cloud and network engineering wasn't any
+            single thing, it was a pattern. Every outage or permission issue
+            I helped troubleshoot left me wanting to understand the layer undernath:
+            DNS, routing, identity, the actual infrastructure. So I started building.
+            AWS Cloud Practitioner first, then Solutions Architect Associate, then
+            CompTIA Network+. On the side: a Raspberry Pi NAS, a Windows Server lab 
+            with 500+ simulated users in Active Directory, a full multi-user serverless
+            app on AWS, and the resume site your're reading this on.
           </p>
 
           <p>
