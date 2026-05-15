@@ -6,19 +6,33 @@ export default function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [honeypot, setHoneypot] = useState('');
   const [status, setStatus] = useState('idle');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('sending');
-    console.log('Form submission:', { name, email, message });
-    setTimeout(() => {
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus('sending');
+
+  try {
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, message, honeypot }),
+    });
+
+    if (response.ok) {
       setStatus('sent');
       setName('');
       setEmail('');
       setMessage('');
-    }, 500);
-  };
+      setHoneypot('');
+    } else {
+      setStatus('error');
+    }
+  } catch{
+    setStatus('error');
+  }
+};
 
   return (
     <>
@@ -70,6 +84,17 @@ export default function Contact() {
             />
           </div>
 
+<input
+  type="text"
+  name="website"
+  value={honeypot}
+  onChange={(e) => setHoneypot(e.target.value)}
+  style={{ position: 'absolute', left: '-9999px' }}
+  tabIndex={-1}
+  autoComplete="off"
+  aria-hidden="true"
+/>
+
           <button
             type="submit"
             className="contact-submit"
@@ -79,11 +104,16 @@ export default function Contact() {
           </button>
 
           {status === 'sent' && (
-            <div className="contact-success">
-              Message captured locally (backend lands in a future build).
-              You'll hear back within 48 hours once live.
-            </div>
-          )}
+  <div className="contact-success">
+    Message sent. You'll hear back within 48 hours.
+  </div>
+)}
+
+{status === 'error' && (
+  <div className="contact-error">
+    Something went wrong sending your message. You can also reach me directly at Lnngo86@outlook.com.
+  </div>
+)}
         </form>
 
         <aside className="contact-sidebar">
