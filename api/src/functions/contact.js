@@ -36,7 +36,7 @@ app.http('contact', {
       sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
       await sgMail.send({
-        to: 'Lnngo86@outlook.com',
+        to: 'lawrence.ngo05@gmail.com',
         from: 'Lnngo86@outlook.com',
         replyTo: email,
         subject: `Resume site contact from ${name}`,
