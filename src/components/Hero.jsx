@@ -11,11 +11,12 @@ export default function Hero() {
           From clinical systems to <em>cloud networks.</em>
         </h1>
         <p className="hero-lede">
-          AWS-certified with hands-on labs spanning serverless architecture,
-          Active Directory, and site-to-site VPN. Currently coordinating
-          clinical research at Fred Hutchinson Cancer Center — building the
-          network engineering chops to make the jump.
-        </p>
+  AWS-certified with hands-on labs spanning serverless architecture,
+  Active Directory, and defense-in-depth authorization. Currently a
+  clinical research coordinator at Fred Hutchinson Cancer Center,
+  looking for the role where cloud, network, and security work all
+  combine.
+</p>
         <div className="hero-cta-row">
           <Link to="/projects" className="hero-cta-primary">
             See the work

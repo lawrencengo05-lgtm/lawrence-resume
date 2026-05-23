@@ -40,7 +40,7 @@ export default function Contact() {
         <div className="contact-eyebrow">Get in touch</div>
         <h1 className="contact-title">Contact</h1>
         <p className="contact-lede">
-          Looking to hire a cloud engineer who's built and shipped real systems in production? Send a note — I respond to every message.
+          Looking to hire a cloud, network, or security engineer who's built and shipped real systems in production? Send a note — I respond to every message.
         </p>
       </section>
 
@@ -109,7 +109,7 @@ export default function Contact() {
 
 {status === 'error' && (
   <div className="contact-error">
-    Something went wrong sending your message. You can also reach me directly at Lnngo86@outlook.com.
+    Something went wrong sending your message. You can also reach me directly at Lawrence.ngo05@gmail.com.
   </div>
 )}
         </form>

@@ -8,11 +8,12 @@ export default function Experience() {
         <div className="experience-eyebrow">Career</div>
         <h1 className="experience-title">Experience</h1>
         <p className="experience-lede">
-          Five years across emergency medicine, clinical research, and now
-          network engineering. The throughline is the same — pattern
-          recognition, structured troubleshooting, and translating between
-          technical and non-technical stakeholders.
-        </p>
+  Five years across emergency medicine, clinical research, and now
+  cloud and infrastructure work. Different fields, same discipline —
+  operating under audit, controlling access to information that
+  matters, and translating between the people who depend on the
+  same systems.
+</p>
       </section>
 
       <div className="experience-list">

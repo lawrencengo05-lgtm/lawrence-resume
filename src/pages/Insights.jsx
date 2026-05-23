@@ -9,12 +9,12 @@ const upcomingPosts = [
   {
     title: 'Building an Active Directory lab for 500 simulated users',
     summary: 'How I designed the OU structure, set up GPO precedence, and traced authentication failures back to DNS misconfigurations.',
-    status: 'Planned',
+    status: 'In progress',
   },
   {
     title: 'Site-to-site VPN, on-prem to AWS: the parts the tutorials skip',
     summary: 'Tunnel redundancy, BGP routing, overlapping CIDR ranges, and why the tunnel being up doesn\'t mean traffic flows.',
-    status: 'Planned',
+    status: 'In progress',
   },
 ];
 

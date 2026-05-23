@@ -10,7 +10,7 @@ export default function PageLayout() {
     <>
       <header className="layout-header">
         <Link to="/" className="layout-brand" onClick={closeMenu}>
-          <div className="layout-brand-eyebrow">Cloud engineer</div>
+          <div className="layout-brand-eyebrow">Cloud and Security engineer</div>
           <div className="layout-brand-name">Lawrence Ngo</div>
         </Link>
 
