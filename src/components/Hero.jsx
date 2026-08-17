@@ -8,14 +8,15 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-eyebrow">Seattle · Washington</div>
         <h1 className="hero-headline">
-          From clinical systems to <em>cloud networks.</em>
+       Where clinical research meets <em>AI governance.</em>
         </h1>
         <p className="hero-lede">
-  AWS-certified with hands-on labs spanning serverless architecture,
-  Active Directory, and defense-in-depth authorization. Currently a
-  clinical research coordinator at Fred Hutchinson Cancer Center,
-  looking for the role where cloud, network, and security work all
-  combine.
+  Four years operationalizing HIPAA, IRB, and FDA compliance across 10+
+  concurrent oncology trials. Recently led an institution-approved
+  generative AI governance pilot applying the NIST AI RMF and ISO/IEC
+  42001. Pursuing IAPP AIGP alongside AWS Solutions Architect and
+  Security+ work. Looking for roles in AI governance, responsible AI
+  deployment, and GRC.
 </p>
         <div className="hero-cta-row">
           <Link to="/projects" className="hero-cta-primary">

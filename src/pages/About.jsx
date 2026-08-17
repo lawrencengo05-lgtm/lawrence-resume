@@ -82,11 +82,11 @@ export default function About() {
             </li>
             <li>
               <span className="about-currently-label">Learning</span>
-              <span>CompTIA Security+</span>
+              <span>CompTIA Security+, IAPP AIGP</span>
             </li>
             <li>
               <span className="about-currently-label">Outside work</span>
-              <span>Homelab, Sports, Automotive Enthusiast</span>
+              <span>AI governance, responsible AI, GRC, cybersecurity</span>
             </li>
           </ul>
 
@@ -105,6 +105,18 @@ export default function About() {
             <li>
               <span className="about-cert-name">CompTIA Network+</span>
               <span className="about-cert-org">CompTIA</span>
+            </li>
+            <li>
+           <span className="about-cert-name">
+             CompTIA Security+ <em style={{ color: 'var(--gold)', fontSize: '0.85em' }}>(in progress)</em>
+           </span>
+           <span className="about-cert-org">CompTIA</span>
+          </li>
+            <li>
+            <span className="about-cert-name">
+            IAPP AIGP <em style={{ color: 'var(--gold)', fontSize: '0.85em' }}>(in progress)</em>
+           </span>
+             <span className="about-cert-org">IAPP</span>
             </li>
           </ul>
         </aside>
