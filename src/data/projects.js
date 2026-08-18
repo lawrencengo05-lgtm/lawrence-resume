@@ -1,6 +1,8 @@
 export const projects = [
   {
     slug: 'responsible-ai-chatbot',
+    number: '01',
+    category: 'ai governance',
     title: 'Responsible AI Chatbot Deployment',
     summary:
       'Institution-approved generative AI chatbot for clinical research support, scoped to internal SOPs and NCT.gov trial protocols. Applied the NIST AI RMF and ISO/IEC 42001 across the deployment lifecycle.',
@@ -24,6 +26,8 @@ export const projects = [
   },
   {
     slug: 'claude-code-job-agent',
+    number: '02',
+    category: 'ai engineering',
     title: 'Claude Code Job-Hunting Agent',
     summary:
       'Personal Claude Code agent that automates parts of the job-search workflow — from listing analysis to tailored application drafting — with human-in-the-loop review before anything is submitted.',
@@ -46,6 +50,8 @@ export const projects = [
   },
   {
     slug: 'identity-access-management-lab',
+    number: '03',
+    category: 'identity',
     title: 'Identity and Access Management Lab',
     summary:
       'Windows Server AD environment with 500+ users, OUs, and GPOs. Applied RBAC and centralized identity governance across domain-joined systems — the on-prem foundation for the cloud IAM work.',
@@ -68,6 +74,8 @@ export const projects = [
   },
   {
     slug: 'cloud-network-security',
+    number: '04',
+    category: 'cloud security',
     title: 'Cloud Network Security Architecture',
     summary:
       'AWS VPC peering, site-to-site VPN, and a serverless application with CloudWatch audit logging. Applied IAM least-privilege across every layer.',
